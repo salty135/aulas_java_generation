@@ -9,8 +9,7 @@ public class ex4 {
 
 	public static void main(String[] args) {
 Scanner scanner = new Scanner(System.in);
-        
-        // Criar e inicializar o Set com 10 valores inteiros
+
         Set<Integer> numeros = new HashSet<>();
         numeros.add(2);
         numeros.add(5);
@@ -22,16 +21,13 @@ Scanner scanner = new Scanner(System.in);
         numeros.add(8);
         numeros.add(10);
         numeros.add(6);
-        
-        // Mostrar a lista (opcional)
+
         System.out.println("Lista de números no Set:");
         System.out.println(numeros);
-        
-        // Solicitar o número a ser buscado
+
         System.out.print("\nDigite o número que você deseja encontrar: ");
         int numeroProcurado = scanner.nextInt();
-        
-        // Verificar se o número está no Set
+
         if (numeros.contains(numeroProcurado)) {
             System.out.println("O número " + numeroProcurado + " foi encontrado!");
         } else {
